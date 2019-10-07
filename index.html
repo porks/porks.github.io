@@ -1,5 +1,570 @@
+<!DOCTYPE html>
 <html>
-<body>
-    <h1>foobar teste</h1>
+  <!--
+    deixar os cards "collapsed"
+    Substituir as tags
+                  tag1:<div class="card">
+                   por:<div class="card collapsed-card">
+                  tag1:<i class="fas fa-minus"></i></button>
+                   por:<i class="fas fa-plus"></i></button>
+    collapsed-card
+  -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Fixed Navbar Layout</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="AdminLTE/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition layout-top-nav layout-navbar-fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="AdminLTE/index3.html" class="brand-link elevation-4">
+      <img src="AdminLTE/dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="AdminLTE/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-header">MISCELLANEOUS</li>
+          <li class="nav-item">
+            <a href="https://adminlte.io/docs/3.0" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>Documentation</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="offset-sm-2 col-sm-6">
+            <h1>Bitcoins</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+        <!--
+          ############################## 
+          INICIO: Titulo 1         ##### Sobre essa página
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+                <!-- Default box -->
+            <div class="card collapsed-card">
+              <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                <h3 class="card-title">Sobre esta página</h3>
+
+
+                <div class="card-tools">
+                    <small>(clique aqui)</small>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="card-body bg-secondary color-palette">
+                      Vou fazer um guia prático relatando como fiz minha primeira compra de bitcoins.
+                <br />Usei 50,00 reais para fazer esse teste, mas poderia ter sido 25,00.
+                <br />
+                <br />A ideia é 
+                        <b>trocar os R$ 50,00 por bitcoins e transferir para uma carteira no seu computador</b>,
+                <br />com isso podemos ver todo o processo acontecer e entender melhor como ele funciona.
+                <br />
+                <br />Não acho que o processo de comprar bitcoins e transferir para uma carteira seja difícil de entender, 
+                <br />porém esse processo é cheio de detalhes do "mundo moderno dos computadores".
+                <br />
+                <br />Você com certeza é capaz de entender o que é um "hash", ou como criar uma "chave privada", 
+                <br />e também entender porque é extremamente difícil alguém "adivinhar uma chave privada". 
+                <br />Essas são expressões que você vai precisar se familiarizar para usar bitcoins.
+                <br />Então tire um tempo para pesquisar esses termos quando você encontra-los no texto a seguir.
+                <br />
+                <br />Ninguém além de você iŕa garantir a segurança dos seus bitcoins, 
+                        <b>pesquisar e entender é importante.</b>
+                <br />Confie nesse texto o mesmo tanto que você confia em um desconhecido.
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer bg-gray-dark color-palette">
+                  <br />
+                </div>
+              <!-- /.card-footer-->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+
+        <!-- 
+          ############################## 
+          FIM: Titulo 1            ##### 
+          ############################## 
+        -->
+        <!-- 
+          ############################## 
+          INICIO: Titulo 2         ##### Etapas
+          ############################## 
+        -->
+
+        <div class="row">
+          <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+            <!-- Default box -->
+            <div class="card collapsed-card">
+              <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                <h3 class="card-title">Etapas para comprar e transferir</h3>
+
+                <div class="card-tools">
+                  <small>(clique aqui)</small>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="card-body bg-secondary color-palette">
+                        Vou dividir esse texto em etapas para facilitar a navegação:
+                  <ul>
+                    <li>Criar conta em uma corretora</li>
+                    <li>Trocar Reais por bitcoins</li>
+                    <li>Criar uma carteira no seu computador</li>
+                    <li>Endereços públicos na sua carteira</li>
+                    <li>Transferir bitcoins para sua carteira</li>
+                    <li>As 12 palavras chave (seed)</li>
+                    <li>Chave privada</li>
+                    <li>Livro razão</li>
+                  </ul>
+                </div>
+              <!-- /.card-body -->
+              <div class="card-footer bg-gray-dark color-palette">
+                  <br />
+              </div>
+              <!-- /.card-footer-->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+
+        <!-- 
+          ############################## 
+          FIM: Titulo 2            ##### 
+          ############################## 
+        -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 3        ###### Criar conta em uma corretora
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Criar conta em uma corretora</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                          Primeiro passo é dar alguns Reais (R$) para alguém e receber em troca alguns "centavos" de bitcoins (BTC).
+                    <br />É para isso que você precisa criar uma conta em uma corretora (exchange).
+                    <br />
+                    <br />Na minha primeira compra, 
+                          <b><a style="color: #001f3f" target="_blank" href="https://coinext.com.br">usei a exchange coinext.com.br</a>, 
+                          mas você pode usar qualquer uma.
+                    <br />
+                    <br />É importante se sentir seguro lendo e entendendo o que esses sites te apresentam, 
+                    <br />portanto um primeiro desafio é você entrar no site dessa corretora ou de qualquer outra exchange e criar uma conta.
+                    <br />
+                    <br />Após criar a conta na exchange, você vai precisar <b>transferir os R$50,00 para a conta da corretora, 
+                    <br />eu lembro que fiz um TED</b> para uma conta do "Banco Plural" e depois de algumas horas pude ver o dinheiro
+                    <br />dentro da conta da corretora.
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 3            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 4         #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Trocar Reais por bitcoins</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                          Dentro do site da corretora repare no <b>"LIVRO DE OFERTAS"</b>, 
+                    <br />ele mostra o que outras pessoas (como você) estão oferecendo naquele momento.
+                    <br />
+                    <br />Basta fazer uma <b>ordem de compra</b> no valor que está aparecendo no livro de ofertas
+                    <br />que você irá trocar R$ (reais) por BTC (bitcoins).
+                    <br />
+                    <br />Você pode comprar e depois vender, para então comprar novamente caso queira treinar o uso na plataforma
+                    <br /><b>Cada vez que você vende ou compra bitcoins, a exchange cobra uma taxa.</b>
+                    <br />Aqueles R$50,00 serão bem mais que suficientes para testar o uso
+                    <br />
+                    <br />O valor do "spread" é a diferença entre o valor ofertado por uma pessoa querendo vender bitcoins 
+                          e o valor de alguém querendo comprar.
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 4            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 5         #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Criar uma carteira no seu computador</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-minus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                          Os bitcoins na conta da corretora podem ser roubados.
+                    <br />Ou a corretora pode no futuro se negar a transferir os bitcoins para você.
+                    <br />
+                    <br />É mais seguro criar uma carteira no seu computador e transferir os bitcoins para um endereço dessa carteira.
+                    <br />Deste modo você tem controle total sobre os bitcoins que comprou.
+                    <br />
+                    <br />Usei a carteira 
+                          <b><a style="color: #001f3f" target="_blank" href="https://electrum.org">electrum.org</a></b>, 
+                          entre no site e faça download do software.
+                    <br />Crie a carteira do tipo "standard" pois a exchange "coinext" não consegue transferir para carteiras do tipo "segwit".
+                    <br />
+                    <br />Você deve anotar em um pedaço de papel as 12 palavras exibidas durante a criação da sua carteira. Essas 12 palavras são o que garantem a seguraça da carteira.
+                    <br />Não escreva essas palavras no computador, apenas as anote em um pedaço de papel e deixe muito bem guardado.
+                    <br />Caso você esqueça a senha da sua carteira ou mesmo perca sua carteira, essas 12 palavras é o único modo de recuperar seus bitcoins.
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 5            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 6         #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Endereços públicos na sua carteira</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                    <br />............
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 6            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 7         #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Transferir bitcoins para sua carteira</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                    <br />............
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 7            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 8         #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">As 12 palavras chave (seed)</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                    <br />............
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 8            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 9         #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Chave privada</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                    <br />............
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 9            #####
+            ############################## 
+          -->
+
+        <!-- 
+          ############################## 
+          INICIO: Titulo 10        #####
+          ############################## 
+        -->
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+              <!-- Default box -->
+              <div class="card collapsed-card">
+                <div class="card-header bg-gray-dark color-palette" data-card-widget="collapse" data-toggle="tooltip">
+                  <h3 class="card-title">Livro razão</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+                <div class="card-body bg-secondary color-palette">
+                    <br />............
+                  </div>
+                <!-- /.card-body -->
+                <div class="card-footer bg-gray-dark color-palette">
+                    <br />
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+  
+          <!-- 
+            ############################## 
+            FIM: Titulo 10           #####
+            ############################## 
+          -->
+
+
+        </div>
+      </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.0-rc.3
+    </div>
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="AdminLTE/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="AdminLTE/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="AdminLTE/dist/js/demo.js"></script>
 </body>
 </html>
