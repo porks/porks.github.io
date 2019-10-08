@@ -551,7 +551,27 @@
                   </div>
                 </div>
                 <div class="card-body bg-secondary color-palette">
-                    <br />............
+                          Na prática cada endereço público possui uma chave privada. É o par de chaves privada e pública. 
+                          Para uma transferência ser aceita ela deve ser assinada pela chave privada do endereço público que está enviando bitcoins. 
+                    <br />Esse esquema de chave pública e privada é amplamente usado na internet, inclusive pelo seu banco. É seguro.
+                    <br />
+                    <br />Então quando seus bitcoins <b>"estão na corretora"</b>, na verdade isso significa que: 
+                          <b>os bitcoins estão em um ou mais endereços públicos que a corretora possui a chave privada.</b>
+                    <br />E quando seus bitcoins <b>"estão na sua carteira"</b>, significa que: 
+                          <b>os bitcoins estão em um ou mais endereços públicos que sua carteira possui a chave privada.</b>
+                    <br />
+                    <br />A chave privada é um número grande de 256-bits que pode ser representado por uma sequência de 64 caracteres:
+                    <br />E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262
+                    <br />Isso significa que se alguém "advinhar" os números da sua chave privada, esse alguém pode gastar os bitcoins daquele endereço público.
+                          Mas isso é realmente algo improvável de acontecer. 
+                          Lembre-se: seu banco e toda a "internet segura" funciona com uma tecnologia bem similar a essa.
+                    <br />
+                    <br />Gaste um tempo pesquisando sobre qual a probabilidade de advinhar uma chave privada de 256-bits, será divertido.
+                    <br />
+                    <br />A parte mais sensacional sobre o par de chaves pública e privada é que a assinatura somente pode ser feita pela chave privada e
+                          a chave pública é usada para verificar se a assinatura é verdadeira.
+                    <br /><b>Somente quem tem a chave privada pode fazer aquela assinatura e 
+                          todos com a chave pública podem verificar se a assinatura é verdadeira.</b>
                   </div>
                 <!-- /.card-body -->
                 <div class="card-footer bg-gray-dark color-palette">
@@ -571,7 +591,7 @@
 
         <!-- 
           ############################## 
-          INICIO: Titulo 10        #####
+          INICIO: Titulo 10        ##### As 12 palavras chave (seed)
           ############################## 
         -->
 
@@ -588,7 +608,23 @@
                   </div>
                 </div>
                 <div class="card-body bg-secondary color-palette">
-                    <br />............
+                          As 12 palavras que você anotou ao criar sua carteira na realidade é 
+                          uma maneira mais fácil para nós humanos decorar um número "grande de 256-bits".
+                    <br />
+                    <br />De uma maneira mais simples: a probabilidade de você advinhar aquelas 12 palavras é a mesma de advinhar uma chave privada.
+                    <br />
+                    <br />A carteira electrum usa 2048 palavras diferentes, dessas 2048 palavras você precisa escolher 12 na ordem correta para conseguir 
+                          acessar sua carteira. Isso significa que você tem 2048^12 possibilidades (2048 elevado a potência 12).
+                    <br />
+                    <br />Esse tipo de carteira é conhecida como "HD Wallets" (Carteiras deterministicas hierarquicas), são carteiras que a partir das
+                          12 palavras gera as chaves privadas usadas para assinar as transferências dos seus bitcoins.
+                    <br />
+                    <br />Essa parte é delicada de entender. Imagine que as 12 palavras são usadas em uma função matemática cujo o resultado 
+                          são as chaves privadas e públicas. Ou seja, sempre que você usar aquelas exatas 12 palavras, você vai ter como resultado 
+                          sempre as mesmas chaves privadas e públicas.
+                    <br />
+                    <br />Deste modo não é necessário criar um backup da sua carteira electrum, é suficiente apenas guardar as 12 palavras, pois 
+                          somente precisamos delas para gerar as chaves privadas e públicas relacionadas aos seus bitcoins.
                   </div>
                 <!-- /.card-body -->
                 <div class="card-footer bg-gray-dark color-palette">
